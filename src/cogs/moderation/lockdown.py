@@ -14,7 +14,6 @@ class Lockdown(commands.Cog):
     ):
         channel = ctx.channel if channel == None else channel
         overwrites = channel.overwrites_for(ctx.guild.default_role)
-        overwrites.send_messages = False
 
         if overwrites.send_messages:
             overwrites.send_messages = False
