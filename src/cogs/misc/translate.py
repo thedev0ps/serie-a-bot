@@ -36,7 +36,7 @@ class Translate(commands.Cog):
                 description=f"**Translation:**\n```{translated.capitalize()}```",
             )
             embed.set_footer(
-                text=f"Requested by {ctx.author.display_name} • Provided by Serie A Bot"
+                text=f"Requested by {ctx.author.display_name} • Provided by CalcioBot"
             )
 
             await ctx.reply(embed=embed, mention_author=False)
