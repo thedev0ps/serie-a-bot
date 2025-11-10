@@ -33,7 +33,7 @@ class Translate(commands.Cog):
             embed = discord.Embed(
                 color=discord.Color.blue(),
                 title=f"Translated from {LANGUAGES.get(src_lang).capitalize()} -> English",
-                description=f"**Translation:**\n`{translated.capitalize()}`",
+                description=f"**Translation:**\n```{translated.capitalize()}```",
             )
             embed.set_footer(
                 text=f"Requested by {ctx.author.display_name} • Provided by Serie A Bot"
