@@ -62,7 +62,7 @@ class Standings(commands.Cog):
             description=f"```{headers}\n{standings}```",
         )
         embed.set_footer(
-            f"Requested by {ctx.author.display_name} • Provided by CalcioBot"
+            text=f"Requested by {ctx.author.display_name} • Provided by CalcioBot"
         )
         await ctx.reply(
             embed=embed,
