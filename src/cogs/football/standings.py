@@ -20,7 +20,7 @@ def get_standings():
             {
                 "position": team["position"],
                 "name": team["team"]["shortName"],
-                "played": team["playedGames"],  # correct field name
+                "played": team["playedGames"],
                 "won": team["won"],
                 "draw": team["draw"],
                 "lost": team["lost"],
