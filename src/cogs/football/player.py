@@ -118,7 +118,7 @@ class Player(commands.Cog):
                         else "https://tmssl.akamaized.net//images/wappen/normquad/123.png"
                     )
                     if info["status"] != "deceased"
-                    else "https://tmssl.akamaized.net//images/wappen/small/4023.png"
+                    else "https://tmssl.akamaized.net//images/wappen/normquad/4023.png"
                 ),
             )
 
