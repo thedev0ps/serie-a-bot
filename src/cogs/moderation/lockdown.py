@@ -15,7 +15,7 @@ class Lockdown(commands.Cog):
         channel = channel or ctx.channel
         overwrites = channel.overwrites_for(ctx.guild.default_role)
 
-        if overwrites.send_messages:
+        if overwrites.send_messages is not False:
             overwrites.send_messages = False
             await channel.set_permissions(ctx.guild.default_role, overwrite=overwrites)
             await ctx.send(f":lock: {channel.mention} has been locked")
